@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://theapix.github.io',
-	base: 'theapix',
+	site: 'https://theapix.com',
+	base: '',
 	integrations: [mdx(), sitemap()],
 });
