@@ -5,7 +5,18 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/" class="logo">
+			<svg xmlns="http://www.w3.org/2000/svg" width="200" height="32" class="iconLeft">
+				<g>
+					<g fill="#858482" transform="matrix(1.61284 0 0 1.61284 100.404 127.915)">
+						<path d="m-25.8,-63.88l-3.5,0l0,-7l-3.5,0l0,-1.75l3.5,0l0,-3.5l3.5,0l0,3.5l3.5,0l0,1.75l-3.5,0l0,7zm8.75,0l-3.5,0l0,-12.25l3.5,0l0,3.5l7,0l0,1.75l1.75,0l0,7l-3.5,0l0,-7l-5.25,0l0,7zm21,0l-8.75,0l0,-1.75l-1.75,0l0,-5.25l1.75,0l0,-1.75l8.75,0l0,1.75l1.75,0l0,3.5l-8.75,0l0,1.75l7,0l0,1.75zm-7,-7l0,1.75l5.25,0l0,-1.75l-5.25,0zm22.75,7l-10.5,0l0,-1.75l-1.75,0l0,-1.75l1.75,0l0,-1.75l7,0l0,-1.75l-7,0l0,-1.75l8.75,0l0,1.75l1.75,0l0,7zm-8.75,-3.5l0,1.75l5.25,0l0,-1.75l-5.25,0zm14,5.25l-3.5,0l0,-10.5l10.5,0l0,1.75l1.75,0l0,3.5l-1.75,0l0,1.75l-7,0l0,3.5zm0,-8.75l0,3.5l5.25,0l0,-3.5l-5.25,0zm19.25,-3.5l-3.5,0l0,-1.75l3.5,0l0,1.75zm3.5,10.5l-10.5,0l0,-1.75l3.5,0l0,-5.25l-1.75,0l0,-1.75l5.25,0l0,7l3.5,0l0,1.75zm5.25,0l-3.5,0l0,-1.75l1.75,0l0,-1.75l1.75,0l0,-1.75l-1.75,0l0,-1.75l-1.75,0l0,-1.75l3.5,0l0,1.75l1.75,0l0,1.75l1.75,0l0,-1.75l1.75,0l0,-1.75l3.5,0l0,1.75l-1.75,0l0,1.75l-1.75,0l0,1.75l1.75,0l0,1.75l1.75,0l0,1.75l-3.5,0l0,-1.75l-1.75,0l0,-1.75l-1.75,0l0,1.75l-1.75,0l0,1.75z"/>
+					</g>
+					<g fill="#C2C1BF" transform="matrix(1.05123 0 0 1.05123 33.9576 110.57)" class="figure">
+						<path d="m-14.75,-82.04l4.11,7.1l10.32,-17.84l-8.98,0l0,-5.61l-11.51,-6.61l-11.51,6.61l0,13.22l11.51,6.61l6.06,-3.48zm10.96,-8.74l-6.85,11.85l-6.86,-11.85l13.71,0z"/>
+				 	</g>
+				</g>
+			</svg>
+		</a></h2>
 		<div class="internal-links">
 			<!-- <HeaderLink href="/">Home</HeaderLink> -->
 			<!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
@@ -60,6 +71,12 @@ import { SITE_TITLE } from '../consts';
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+	}
+	.logo {
+		display: flex;
+	}
+	.logo:hover .figure {
+		fill: rgb(var(--accent));
 	}
 	.social-links,
 	.social-links a {
